@@ -228,16 +228,16 @@
                     <span class="text-sm font-bold">Pineapple <span class="text-slate-400 font-normal">— ₦2,950 no banana</span></span>
                   </label>
                   <label class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 cursor-pointer has-[:checked]:border-frost">
-                    <input type="radio" name="smoothie-base" value="Strawberry" data-extra="450" class="accent-cyan-400" />
-                    <span class="text-sm font-bold">Strawberry <span class="text-slate-400 font-normal">— ₦2,950 no banana</span></span>
+                    <input type="radio" name="smoothie-base" value="Guava" data-extra="450" class="accent-cyan-400" />
+                    <span class="text-sm font-bold">Guava <span class="text-slate-400 font-normal">— ₦2,950 no banana</span></span>
                   </label>
                   <label class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 cursor-pointer has-[:checked]:border-frost">
-                    <input type="radio" name="smoothie-base" value="Passion Fruit" data-extra="450" class="accent-cyan-400" />
-                    <span class="text-sm font-bold">Passion Fruit <span class="text-slate-400 font-normal">— ₦2,950 no banana</span></span>
+                    <input type="radio" name="smoothie-base" value="Watermelon" data-extra="450" class="accent-cyan-400" />
+                    <span class="text-sm font-bold">Watermelon <span class="text-slate-400 font-normal">— ₦2,950 no banana</span></span>
                   </label>
                   <label class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 cursor-pointer has-[:checked]:border-frost">
-                    <input type="radio" name="smoothie-base" value="Coconut" data-extra="450" class="accent-cyan-400" />
-                    <span class="text-sm font-bold">Coconut <span class="text-slate-400 font-normal">— ₦2,950 no banana</span></span>
+                    <input type="radio" name="smoothie-base" value="Apple" data-extra="450" class="accent-cyan-400" />
+                    <span class="text-sm font-bold">Apple <span class="text-slate-400 font-normal">— ₦2,950 no banana</span></span>
                   </label>
                 </div>
               </div>
@@ -246,9 +246,9 @@
                 <div id="extra-fruits" class="grid grid-cols-2 gap-2 text-sm">
                   <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Mango" class="accent-orange-500" /> Mango</label>
                   <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Pineapple" class="accent-orange-500" /> Pineapple</label>
-                  <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Strawberry" class="accent-orange-500" /> Strawberry</label>
-                  <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Passion Fruit" class="accent-orange-500" /> Passion Fruit</label>
-                  <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Coconut" class="accent-orange-500" /> Coconut</label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Guava" class="accent-orange-500" /> Guava</label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Watermelon" class="accent-orange-500" /> Watermelon</label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Apple" class="accent-orange-500" /> Apple</label>
                   <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Peanut Butter" class="accent-orange-500" /> Peanut Butter</label>
                 </div>
                 <p class="text-[11px] text-slate-500 mt-2">Extra fruits depend on daily market availability. If something is out, we will suggest a swap on WhatsApp.</p>
@@ -445,6 +445,15 @@
               </select>
             </div>
             <div><label class="block text-xs font-semibold mb-1" for="cart-room">Room / note (optional)</label><input id="cart-room" type="text" placeholder="e.g. Room 204 — call on arrival" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-white/10 text-sm placeholder-slate-500 focus:outline-none focus:border-frost" /></div>
+
+            <div class="p-4 rounded-xl bg-frost/10 border border-frost/30 mt-3">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-frost mb-2">Payment details</h4>
+              <p class="text-sm text-slate-300 mb-2">Transfer to:</p>
+              <p class="text-xs font-bold text-white">Account: <strong class="text-frost">7046456105</strong></p>
+              <p class="text-xs text-slate-300">Bank: <strong class="text-white">Moniepoint</strong></p>
+              <p class="text-xs text-slate-300">Name: <strong class="text-white">Akunna Daniella</strong></p>
+              <p class="text-xs text-slate-400 mt-2">After payment, send your receipt screenshot to us on WhatsApp — preferably <strong class="text-white">0814 306 9220</strong>, or any of the 4 lines above.</p>
+            </div>
           </div>
         </div>
 
@@ -454,14 +463,16 @@
             <div class="flex justify-between text-slate-400"><span>Delivery:</span><span id="summary-delivery" class="font-mono text-frost">FREE</span></div>
             <div class="flex justify-between text-base font-bold pt-2 border-t border-white/10"><span>Total:</span><span id="summary-total" class="font-display font-extrabold text-2xl text-emerald-400">₦0</span></div>
           </div>
-          <p class="text-[11px] text-slate-400">Tap a line below to send your order on WhatsApp. Our 4 team lines are listed so someone always replies fast — if the first line is busy, tap the next.</p>
-          <div class="grid grid-cols-2 gap-2">
-            <button onclick="dispatchToLine(0)" class="py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 font-display font-bold text-xs">Send · 0814 306 9220</button>
-            <button onclick="dispatchToLine(1)" class="py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 font-display font-bold text-xs">Send · 0808 305 1201</button>
-            <button onclick="dispatchToLine(2)" class="py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 font-display font-bold text-xs">Send · 0816 886 3279</button>
-            <button onclick="dispatchToLine(3)" class="py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 font-display font-bold text-xs">Send · 0907 372 0732</button>
+          <p class="text-[11px] text-slate-400">Send your order to all 4 team lines on WhatsApp — someone always replies fast. If one line is busy, another will respond.</p>
+          <button onclick="dispatchToAllLines()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 font-display font-bold text-sm shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2">
+            <i data-lucide="send" class="w-4 h-4"></i> Send order to all 4 lines (WhatsApp)
+          </button>
+          <div class="grid grid-cols-2 gap-2 mt-3 text-xs">
+            <button onclick="dispatchToLine(0)" class="py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 font-display font-bold">0814 306 9220</button>
+            <button onclick="dispatchToLine(1)" class="py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 font-display font-bold">0808 305 1201</button>
+            <button onclick="dispatchToLine(2)" class="py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 font-display font-bold">0816 886 3279</button>
+            <button onclick="dispatchToLine(3)" class="py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 font-display font-bold">0907 372 0732</button>
           </div>
-          <button onclick="dispatchToAllLines()" class="w-full py-2.5 rounded-xl bg-white/5 border border-white/15 text-xs font-bold text-slate-200">Open all 4 chats (one tap each)</button>
         </div>
       </div>
     </div>
