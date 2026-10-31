@@ -132,12 +132,12 @@
             </div>
             <div class="py-5 space-y-3">
               <div class="flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/10">
-                <div><p class="font-display font-bold">Classic Banana</p><p class="text-xs text-slate-400">Our signature · creamy & filling</p></div>
-                <p class="font-display font-black text-xl">₦2,500</p>
+                <div><p class="font-display font-bold">Sun-kissed Banana</p><p class="text-xs text-slate-400">Our signature banana · creamy & filling</p></div>
+                <p class="font-display font-black text-xl">₦2,300</p>
               </div>
               <div class="flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/10">
-                <div><p class="font-display font-bold">Chocolate Banana</p><p class="text-xs text-slate-400">Crowd favourite · cocoa blend</p></div>
-                <p class="font-display font-black text-xl">₦2,500</p>
+                <div><p class="font-display font-bold">Cocoa Cabana</p><p class="text-xs text-slate-400">Chocolate & banana blend</p></div>
+                <p class="font-display font-black text-xl">₦2,450</p>
               </div>
               <div class="p-4 rounded-2xl bg-frost/5 border border-frost/20 text-xs text-slate-300">
                 Want more fruit? Add any extra fruit for <strong class="text-white">+₦450 per cup</strong> (subject to daily availability — we confirm on WhatsApp).
@@ -180,21 +180,62 @@
           <h2 class="font-display font-black text-3xl sm:text-5xl mt-1">Banana smoothie menu</h2>
           <p class="text-slate-400 mt-2 max-w-2xl">Bananas are what we do best — always stocked, always fresh. Anything else is an extra and depends on what is available at the market that day.</p>
 
-          <div class="grid md:grid-cols-2 gap-5 mt-8">
-            <div class="glass-card rounded-2xl p-6 flex flex-col">
-              <span class="self-start px-3 py-1 rounded-full bg-yellow-400/15 text-yellow-300 text-xs font-bold">★ Most popular base</span>
-              <h3 class="font-display font-bold text-2xl mt-3">Classic Banana</h3>
-              <p class="text-sm text-slate-300 mt-1">Frozen bananas + milk. Creamy, filling, simple.</p>
-              <p class="font-display font-black text-2xl mt-4">₦2,500 <span class="text-xs font-normal text-slate-400">/ 500ml cup</span></p>
-              <button onclick="addToCart('Classic Banana (500ml)', 2500, 'Smoothies')" class="mt-4 py-3 rounded-xl bg-yellow-400 hover:bg-yellow-300 text-midnight font-display font-bold text-sm">Add Classic Banana</button>
-            </div>
-            <div class="glass-card rounded-2xl p-6 flex flex-col">
-              <span class="self-start px-3 py-1 rounded-full bg-amber-700/30 text-amber-300 text-xs font-bold">Crowd favourite</span>
-              <h3 class="font-display font-bold text-2xl mt-3">Chocolate Banana</h3>
-              <p class="text-sm text-slate-300 mt-1">Classic banana blended with rich cocoa. Tastes like dessert, fuels like a meal.</p>
-              <p class="font-display font-black text-2xl mt-4">₦2,500 <span class="text-xs font-normal text-slate-400">/ 500ml cup</span></p>
-              <button onclick="addToCart('Chocolate Banana (500ml)', 2500, 'Smoothies')" class="mt-4 py-3 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-display font-bold text-sm">Add Chocolate Banana</button>
-            </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
+            <button onclick="addToCart('Sun-kissed Banana (500ml)', 2300, 'Smoothies')" class="glass-card rounded-2xl p-6 flex flex-col hover:border-frost/50 transition-colors border border-white/10">
+              <span class="self-start px-3 py-1 rounded-full bg-yellow-400/15 text-yellow-300 text-xs font-bold mb-3">★ Signature banana</span>
+              <h3 class="font-display font-bold text-lg text-white mb-1">Sun-kissed Banana</h3>
+              <p class="text-xs text-slate-400 mb-3 flex-1">Banana</p>
+              <p class="font-display font-black text-xl text-white">₦2,300 <span class="text-xs font-normal text-slate-400">/ 500ml</span></p>
+            </button>
+
+            <button onclick="addToCart('Coconut Candy (500ml)', 2400, 'Smoothies')" class="glass-card rounded-2xl p-6 flex flex-col hover:border-frost/50 transition-colors border border-white/10">
+              <span class="self-start px-3 py-1 rounded-full bg-frost/15 text-frost text-xs font-bold mb-3">Coconut</span>
+              <h3 class="font-display font-bold text-lg text-white mb-1">Coconut Candy</h3>
+              <p class="text-xs text-slate-400 mb-3 flex-1">Coconut shavings & banana</p>
+              <p class="font-display font-black text-xl text-white">₦2,400 <span class="text-xs font-normal text-slate-400">/ 500ml</span></p>
+            </button>
+
+            <button onclick="addToCart('Cocoa Cabana (500ml)', 2450, 'Smoothies')" class="glass-card rounded-2xl p-6 flex flex-col hover:border-frost/50 transition-colors border border-white/10">
+              <span class="self-start px-3 py-1 rounded-full bg-amber-700/30 text-amber-300 text-xs font-bold mb-3">Chocolate</span>
+              <h3 class="font-display font-bold text-lg text-white mb-1">Cocoa Cabana</h3>
+              <p class="text-xs text-slate-400 mb-3 flex-1">Chocolate & banana</p>
+              <p class="font-display font-black text-xl text-white">₦2,450 <span class="text-xs font-normal text-slate-400">/ 500ml</span></p>
+            </button>
+
+            <button onclick="addToCart('Blonde Cocoa (500ml)', 2500, 'Smoothies')" class="glass-card rounded-2xl p-6 flex flex-col hover:border-frost/50 transition-colors border border-white/10">
+              <span class="self-start px-3 py-1 rounded-full bg-amber-700/30 text-amber-300 text-xs font-bold mb-3">Chocolate & coconut</span>
+              <h3 class="font-display font-bold text-lg text-white mb-1">Blonde Cocoa</h3>
+              <p class="text-xs text-slate-400 mb-3 flex-1">Chocolate, banana & coconut shavings</p>
+              <p class="font-display font-black text-xl text-white">₦2,500 <span class="text-xs font-normal text-slate-400">/ 500ml</span></p>
+            </button>
+
+            <button onclick="addToCart('Sweet Melon Frost (500ml)', 2200, 'Smoothies')" class="glass-card rounded-2xl p-6 flex flex-col hover:border-frost/50 transition-colors border border-white/10">
+              <span class="self-start px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-400 text-xs font-bold mb-3">Watermelon</span>
+              <h3 class="font-display font-bold text-lg text-white mb-1">Sweet Melon Frost</h3>
+              <p class="text-xs text-slate-400 mb-3 flex-1">Watermelon & banana</p>
+              <p class="font-display font-black text-xl text-white">₦2,200 <span class="text-xs font-normal text-slate-400">/ 500ml</span></p>
+            </button>
+
+            <button onclick="addToCart('Tropic Trio (500ml)', 2300, 'Smoothies')" class="glass-card rounded-2xl p-6 flex flex-col hover:border-frost/50 transition-colors border border-white/10">
+              <span class="self-start px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-400 text-xs font-bold mb-3">Trio blend</span>
+              <h3 class="font-display font-bold text-lg text-white mb-1">Tropic Trio</h3>
+              <p class="text-xs text-slate-400 mb-3 flex-1">Coconut, banana & watermelon</p>
+              <p class="font-display font-black text-xl text-white">₦2,300 <span class="text-xs font-normal text-slate-400">/ 500ml</span></p>
+            </button>
+
+            <button onclick="addToCart('Midnight Melon (500ml)', 2350, 'Smoothies')" class="glass-card rounded-2xl p-6 flex flex-col hover:border-frost/50 transition-colors border border-white/10">
+              <span class="self-start px-3 py-1 rounded-full bg-slate-700/30 text-slate-300 text-xs font-bold mb-3">Dark & fruity</span>
+              <h3 class="font-display font-bold text-lg text-white mb-1">Midnight Melon</h3>
+              <p class="text-xs text-slate-400 mb-3 flex-1">Chocolate banana & watermelon</p>
+              <p class="font-display font-black text-xl text-white">₦2,350 <span class="text-xs font-normal text-slate-400">/ 500ml</span></p>
+            </button>
+
+            <button onclick="addToCart('Pink Truffle (500ml)', 2450, 'Smoothies')" class="glass-card rounded-2xl p-6 flex flex-col hover:border-frost/50 transition-colors border border-white/10">
+              <span class="self-start px-3 py-1 rounded-full bg-pink-500/20 text-pink-400 text-xs font-bold mb-3">Full blend</span>
+              <h3 class="font-display font-bold text-lg text-white mb-1">Pink Truffle</h3>
+              <p class="text-xs text-slate-400 mb-3 flex-1">Watermelon, banana, coconut & chocolate</p>
+              <p class="font-display font-black text-xl text-white">₦2,450 <span class="text-xs font-normal text-slate-400">/ 500ml</span></p>
+            </button>
           </div>
 
           <!-- Custom builder -->
@@ -202,9 +243,9 @@
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <div>
                 <h3 class="font-display font-bold text-2xl">Make it yours: pick a base, add fruit</h3>
-                <p class="text-sm text-slate-400">Banana bases start at <strong class="text-white">₦2,500</strong>. Any other base fruit is <strong class="text-white">+₦450</strong>, and each extra fruit is also <strong class="text-white">+₦450 per cup</strong>. Example: mango base with no banana = ₦2,950. Availability is confirmed on WhatsApp.</p>
+                <p class="text-sm text-slate-400">Banana base starts at <strong class="text-white">₦2,500</strong>. Banana/Watermelon or Pawpaw/Papaya base is <strong class="text-white">+₦450</strong>. Each extra fruit is also <strong class="text-white">+₦450 per cup</strong>. Availability is confirmed on WhatsApp.</p>
               </div>
-              <span class="px-4 py-2 rounded-xl bg-frost/10 border border-frost/30 text-frost font-display font-extrabold whitespace-nowrap">From ₦2,500 + ₦450 / fruit</span>
+              <span class="px-4 py-2 rounded-xl bg-frost/10 border border-frost/30 text-frost font-display font-extrabold whitespace-nowrap">Base ₦2,500 + ₦450 / fruit</span>
             </div>
 
             <div class="grid sm:grid-cols-2 gap-6 mt-6">
@@ -212,51 +253,35 @@
                 <p class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">1 · Pick your base</p>
                 <div class="space-y-2">
                   <label class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 cursor-pointer has-[:checked]:border-frost">
-                    <input type="radio" name="smoothie-base" value="Classic Banana" data-extra="0" checked class="accent-cyan-400" />
+                    <input type="radio" name="smoothie-base" value="Banana" data-extra="0" checked class="accent-cyan-400" />
                     <span class="text-sm font-bold">Banana <span class="text-slate-400 font-normal">— ₦2,500 included</span></span>
                   </label>
                   <label class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 cursor-pointer has-[:checked]:border-frost">
-                    <input type="radio" name="smoothie-base" value="Chocolate Banana" data-extra="0" class="accent-cyan-400" />
-                    <span class="text-sm font-bold">Chocolate Banana <span class="text-slate-400 font-normal">— ₦2,500 included</span></span>
+                    <input type="radio" name="smoothie-base" value="Banana/Watermelon" data-extra="450" class="accent-cyan-400" />
+                    <span class="text-sm font-bold">Banana/Watermelon <span class="text-slate-400 font-normal">— ₦2,950</span></span>
                   </label>
                   <label class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 cursor-pointer has-[:checked]:border-frost">
-                    <input type="radio" name="smoothie-base" value="Mango" data-extra="450" class="accent-cyan-400" />
-                    <span class="text-sm font-bold">Mango <span class="text-slate-400 font-normal">— ₦2,950 no banana</span></span>
-                  </label>
-                  <label class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 cursor-pointer has-[:checked]:border-frost">
-                    <input type="radio" name="smoothie-base" value="Pineapple" data-extra="450" class="accent-cyan-400" />
-                    <span class="text-sm font-bold">Pineapple <span class="text-slate-400 font-normal">— ₦2,950 no banana</span></span>
-                  </label>
-                  <label class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 cursor-pointer has-[:checked]:border-frost">
-                    <input type="radio" name="smoothie-base" value="Guava" data-extra="450" class="accent-cyan-400" />
-                    <span class="text-sm font-bold">Guava <span class="text-slate-400 font-normal">— ₦2,950 no banana</span></span>
-                  </label>
-                  <label class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 cursor-pointer has-[:checked]:border-frost">
-                    <input type="radio" name="smoothie-base" value="Watermelon" data-extra="450" class="accent-cyan-400" />
-                    <span class="text-sm font-bold">Watermelon <span class="text-slate-400 font-normal">— ₦2,950 no banana</span></span>
-                  </label>
-                  <label class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 cursor-pointer has-[:checked]:border-frost">
-                    <input type="radio" name="smoothie-base" value="Apple" data-extra="450" class="accent-cyan-400" />
-                    <span class="text-sm font-bold">Apple <span class="text-slate-400 font-normal">— ₦2,950 no banana</span></span>
+                    <input type="radio" name="smoothie-base" value="Pawpaw/Papaya" data-extra="450" class="accent-cyan-400" />
+                    <span class="text-sm font-bold">Pawpaw/Papaya <span class="text-slate-400 font-normal">— ₦2,950</span></span>
                   </label>
                 </div>
               </div>
               <div>
                 <p class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">2 · Add extra fruits (+₦450 each)</p>
                 <div id="extra-fruits" class="grid grid-cols-2 gap-2 text-sm">
-                  <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Mango" class="accent-orange-500" /> Mango</label>
-                  <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Pineapple" class="accent-orange-500" /> Pineapple</label>
-                  <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Guava" class="accent-orange-500" /> Guava</label>
                   <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Watermelon" class="accent-orange-500" /> Watermelon</label>
-                  <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Apple" class="accent-orange-500" /> Apple</label>
-                  <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Peanut Butter" class="accent-orange-500" /> Peanut Butter</label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Pineapple" class="accent-orange-500" /> Pineapple</label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Banana" class="accent-orange-500" /> Banana</label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Pawpaw/Papaya" class="accent-orange-500" /> Pawpaw/Papaya</label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Avocado" class="accent-orange-500" /> Avocado</label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer"><input type="checkbox" value="Orange" class="accent-orange-500" /> Orange</label>
                 </div>
                 <p class="text-[11px] text-slate-500 mt-2">Extra fruits depend on daily market availability. If something is out, we will suggest a swap on WhatsApp.</p>
               </div>
             </div>
 
             <div class="flex flex-col sm:flex-row items-center justify-between gap-3 mt-6 pt-5 border-t border-white/10">
-              <p class="text-sm text-slate-300">Your cup: <strong id="builder-summary" class="text-white">Classic Banana</strong> · <strong id="builder-price" class="text-frost font-display text-xl">₦2,500</strong></p>
+              <p class="text-sm text-slate-300">Your cup: <strong id="builder-summary" class="text-white">Banana</strong> · <strong id="builder-price" class="text-frost font-display text-xl">₦2,500</strong></p>
               <button onclick="addBuilderToCart()" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-frost text-midnight font-display font-extrabold">Add custom cup to cart</button>
             </div>
           </div>
@@ -521,8 +546,8 @@
         const base = baseEl.value;
         const baseExtra = parseInt(baseEl.dataset.extra || '0', 10);
         const rawExtras = [...document.querySelectorAll('#extra-fruits input:checked')].map(i => i.value);
-        // Don't double-charge if the extra matches the base (e.g. Mango base + Mango ticked)
-        const extras = rawExtras.filter(e => e.toLowerCase() !== base.toLowerCase());
+        // Don't double-charge if the extra matches/is contained in the base (e.g. Banana/Watermelon base + Banana ticked)
+        const extras = rawExtras.filter(e => !base.toLowerCase().includes(e.toLowerCase()) && e.toLowerCase() !== base.toLowerCase());
         return { base, extras, price: BASE_PRICE + baseExtra + extras.length * FRUIT_EXTRA };
       }
       function updateBuilder() {
